@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Bootstrap项目实战</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- 复用导航栏 -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand logo"><img src="image/logo.png" alt="瓢城企训网"
+            style="width: 200px; height: 50px;"></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+          <li><a href="information.html"><span class="glyphicon glyphicon-list"></span> 资讯</a></li>
+          <li><a href="case.html"><span class="glyphicon glyphicon-fire"></span> 案例</a></li>
+          <li><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span> 关于</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 轮播图 -->
+  <div id="myCarousel" class="carousel slide">
+    <!-- 轮博图指示小圆点 -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- 图片 -->
+    <div class="carousel-inner">
+      <!-- 第一张图片 -->
+      <div class="item active" style="background: #223240">
+        <img src="image/slide1.png" alt="第一张">
+      </div>
+      <!-- 第二张图片 -->
+      <div class="item" style="background: #F5E4DC">
+        <img src="image/slide2.png" alt="第二张">
+      </div>
+      <!-- 第三张图片 -->
+      <div class="item" style="background: #DE2A2D">
+        <img src="image/slide3.png" alt="第三张">
+      </div>
+
+    </div>
+    <!-- 左切换一张 -->
+    <a href="#myCarousel" data-slide="prev" class="carousel-control left">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <!-- 右切换一张 -->
+    <a href="#myCarousel" data-slide="next" class="carousel-control right">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+
+  <!-- 表格1 -->
+  <div class="tab1">
+    <div class="container">
+      <h2 class="tab-h2">「 Lorem 」</h2>
+      <p class="tab-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <!-- 栅栏系统 -->
+      <div class="row">
+        <div class="col-md-6 col">
+          <div class="media">
+            <div class="media-left">
+              <a href="#"><img class="media-object" src="image/tab1-1.png" alt=""></a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Lorem ipsum</h4>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col">
+          <div class="media">
+            <div class="media-left">
+              <a href="#"><img class="media-object" src="image/tab1-2.png" alt=""></a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Lorem ipsum</h4>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col">
+          <div class="media">
+            <div class="media-left">
+              <a href="#"><img class="media-object" src="image/tab1-3.png" alt=""></a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Lorem ipsum</h4>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col">
+          <div class="media">
+            <div class="media-left">
+              <a href="#"><img class="media-object" src="image/tab1-4.png" alt=""></a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Lorem ipsum</h4>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 表格2 -->
+  <div class="tab2">
+    <div class="row">
+      <div class="col-md-6 col-sm-6 tab2-img"><img src="image/tab2.png" class="img-responsive center-block auto" alt="">
+      </div>
+      <div class="text col-md-6 col-sm-6 tab2-text">
+        <h3>Lorem</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 表格3:复用表格2 -->
+  <div class="tab3">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <img src="image/tab3.png" class="img-responsive center-block auto" alt="">
+      </div>
+      <div class="text col-md-6 col-sm-6">
+        <h3>Lorem</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 复用footer -->
+  <div id="footer">
+    <div class="container">
+      <p>lorem| lorem | lorem</p>
+      <p>Lorem, ipsum dolor.. © 2025 lorem. Powered by Bootstrap.</p>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    //轮播图自动播放
+    $('#myCarousel').carousel({
+      interval: 3000
+
+    });
+    $(window).on('load', function () {
+      $('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
+    });
+    $(window).resize(function () {
+      $('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
+    });
+    $(window).on('load', function () {
+      $('.text').eq(1).css('margin-top', ($('.auto').eq(1).height() - $('.text').eq(1).height()) / 2 + 'px');
+    });
+    $(window).resize(function () {
+      $('.text').eq(1).css('margin-top', ($('.auto').eq(1).height() - $('.text').eq(1).height()) / 2 + 'px');
+    });
+
+
+  </script>
+
+</body>
+
+</html>
